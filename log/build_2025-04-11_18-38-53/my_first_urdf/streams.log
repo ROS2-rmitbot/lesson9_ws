@@ -1,0 +1,51 @@
+[0.014s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vudinhso/RMIT_Bot/lesson2_ws/src/my_first_urdf -DCMAKE_INSTALL_PREFIX=/home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf
+[0.178s] -- The C compiler identification is GNU 13.3.0
+[0.288s] -- The CXX compiler identification is GNU 13.3.0
+[0.324s] -- Detecting C compiler ABI info
+[0.479s] -- Detecting C compiler ABI info - done
+[0.483s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.484s] -- Detecting C compile features
+[0.485s] -- Detecting C compile features - done
+[0.504s] -- Detecting CXX compiler ABI info
+[0.624s] -- Detecting CXX compiler ABI info - done
+[0.632s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.632s] -- Detecting CXX compile features
+[0.633s] -- Detecting CXX compile features - done
+[0.664s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.839s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.009s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.158s] -- Added test 'lint_cmake' to check CMake code style
+[1.161s] -- Added test 'xmllint' to check XML markup files
+[1.165s] -- Configuring done (1.1s)
+[1.170s] -- Generating done (0.0s)
+[1.171s] -- Build files have been written to: /home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf
+[1.175s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vudinhso/RMIT_Bot/lesson2_ws/src/my_first_urdf -DCMAKE_INSTALL_PREFIX=/home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf
+[1.176s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf -- -j4 -l4
+[1.223s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf -- -j4 -l4
+[1.233s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf
+[1.242s] -- Install configuration: ""
+[1.242s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes
+[1.242s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/wheel_left_link.STL
+[1.247s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/base_link.STL
+[1.273s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/caster_front_link.STL
+[1.274s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/caster_rear_link.STL
+[1.276s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/imu_link.STL
+[1.276s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/meshes/wheel_right_link.STL
+[1.279s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/urdf
+[1.279s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/urdf/my_robot.urdf.xacro
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/ament_index/resource_index/package_run_dependencies/my_first_urdf
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/ament_index/resource_index/parent_prefix_path/my_first_urdf
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/environment/ament_prefix_path.sh
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/environment/ament_prefix_path.dsv
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/environment/path.sh
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/environment/path.dsv
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/local_setup.bash
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/local_setup.sh
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/local_setup.zsh
+[1.280s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/local_setup.dsv
+[1.281s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/package.dsv
+[1.281s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/ament_index/resource_index/packages/my_first_urdf
+[1.281s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/cmake/my_first_urdfConfig.cmake
+[1.281s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/cmake/my_first_urdfConfig-version.cmake
+[1.281s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/my_first_urdf/share/my_first_urdf/package.xml
+[1.283s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/RMIT_Bot/lesson2_ws/build/my_first_urdf
