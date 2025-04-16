@@ -1,0 +1,54 @@
+[0.020s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vudinhso/RMIT_Bot/lesson2_ws/src/rmitbot_description -DCMAKE_INSTALL_PREFIX=/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description
+[0.117s] -- The C compiler identification is GNU 13.3.0
+[0.217s] -- The CXX compiler identification is GNU 13.3.0
+[0.252s] -- Detecting C compiler ABI info
+[0.397s] -- Detecting C compiler ABI info - done
+[0.409s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.409s] -- Detecting C compile features
+[0.409s] -- Detecting C compile features - done
+[0.424s] -- Detecting CXX compiler ABI info
+[0.614s] -- Detecting CXX compiler ABI info - done
+[0.627s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.627s] -- Detecting CXX compile features
+[0.629s] -- Detecting CXX compile features - done
+[0.633s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.908s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.268s] -- Configuring done (1.2s)
+[1.273s] -- Generating done (0.0s)
+[1.276s] -- Build files have been written to: /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description
+[1.285s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vudinhso/RMIT_Bot/lesson2_ws/src/rmitbot_description -DCMAKE_INSTALL_PREFIX=/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description
+[1.285s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description -- -j4 -l4
+[1.350s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description -- -j4 -l4
+[1.366s] Invoking command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description
+[1.378s] -- Install configuration: ""
+[1.378s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes
+[1.378s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_left_link.STL
+[1.379s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/base_link.STL
+[1.392s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_front_link.STL
+[1.394s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_rear_link.STL
+[1.394s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
+[1.395s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot.urdf.xacro
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot_gazebo.xacro
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
+[1.396s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
+[1.397s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/rviz
+[1.398s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/rviz/display.rviz
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/ament_index/resource_index/package_run_dependencies/rmitbot_description
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/ament_index/resource_index/parent_prefix_path/rmitbot_description
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.sh
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.dsv
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/environment/path.sh
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/environment/path.dsv
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/local_setup.bash
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/local_setup.sh
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/local_setup.zsh
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/local_setup.dsv
+[1.399s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/package.dsv
+[1.400s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/ament_index/resource_index/packages/rmitbot_description
+[1.400s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig.cmake
+[1.400s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig-version.cmake
+[1.400s] -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/package.xml
+[1.402s] Invoked command in '/home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vudinhso/RMIT_Bot/lesson1_ws/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description
