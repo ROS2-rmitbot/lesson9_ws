@@ -8,13 +8,12 @@ from launch.substitutions import Command, LaunchConfiguration
 
 # This file is used to launch the robot in RViz2
 # It will load the 
-# - URDF file, 
-# - robot_state_publisher, 
-# - joint_state_publisher_gui
-# - display it in RViz2
+# - URDF file, for robot_state_publisher
+# - robot_state_publisher: publish TF tree, for rviz
+# - joint_state_publisher_gui: publish joint_state, for robot_state_publisher
+# - RViz2, needs TF from robot_state_publisher and joint_state from joint_state_publisher_gui
 
 def generate_launch_description():
-    # <pkg_name>_dir = get_package_share_directory("<pkg_name>")
     rmitbot_description_dir = get_package_share_directory("rmitbot_description")
     
     model_arg = DeclareLaunchArgument(
