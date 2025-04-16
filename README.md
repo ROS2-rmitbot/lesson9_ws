@@ -1,0 +1,36 @@
+Folders and files explanation
+- .vscode:  autocreated, do nothing
+- build:    autocreated, do nothing
+- install:  autocreated, do nothing
+- log:      autocreated, do nothing
+- src:      contains pkg
+    - include:  contains hpp file. Since the pkg do not have nodes, then it is useless. 
+    - launch:   contains launch files, to launch other packages
+        - display.launch.py:    launch the following executables: 
+            - model_arg,                publish robot description
+            - robot_state_publisher,    publish the tf of the robot
+            - joint_state_publisher,    publish the state of the wheels
+            - rviz_node,                visualize the robot                  
+        - gazebo.launch.py:     launch the following executables: 
+            - model_arg,                    publish robot description
+            - gazebo_resource_path,         path for model, world, media for gazebo  
+            - robot_state_publisher_node,   publish the tf of the robot
+            - gazebo,                       visualize the physics
+            - gz_spawn_entity,              spawn the robot in the gazebo world
+            - gz_ros2_bridge,               connect gazebo to ros2
+    - meshes:   contains stl file
+    - rviz:     contains rivz display configuration
+    - src:      contains cpp file. Since the pkg do not have nodes, then it is useless. 
+    - urdf:     contains the configuration of the robot 
+        - my_robot.urdf.xacro:      robot inerta, visual, and collision
+        - my_robot_gazebo.xacro:    wheels' physics
+    - CMakeLists.txt:   folders that needs to be added to compile in cpp, i.e., :
+        - meshes urdf launch rviz folders
+    - package.xml:      add packages dependencies, i.e., :
+        - robot_state_publisher
+        - joint_state_publisher_gui
+        - rviz2
+        - ros2launch
+        - ros_gz_sim
+ 
+  
