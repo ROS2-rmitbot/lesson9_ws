@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- This is the main urdf document, calling other xacro, including -->
+<!-- rmitbot_platform:  main platform -->
+<!-- rmitbot_gazebo:    gazebo simulation parameters for the main platform -->
+
+<robot name="rmitbot"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Include Gazebo Parameters -->
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_platform.xacro" />
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_gazebo.xacro" />
+
+</robot>

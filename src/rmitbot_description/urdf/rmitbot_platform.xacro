@@ -1,14 +1,11 @@
 <?xml version="1.0"?>
+<!-- This file contains the urdf of the base platform -->
 <!-- Description of the robot in URDF format -->
 <!-- Each link must have at least visual for rivz -->
 <!-- Each link must have inertia and collision for gazebo -->
 
-<robot name="my_robot"
-    xmlns:xacro="http://ros.org/wiki/xacro">
-
-    <!-- Include Gazebo Parameters -->
-    <xacro:include filename="$(find rmitbot_description)/urdf/my_robot_gazebo.xacro" />
-
+<robot name="rmitbot" xmlns:xacro="http://ros.org/wiki/xacro">
+    
     <link name="base_footprint"/>
 
     <link name="base_link">
@@ -144,5 +141,4 @@
         <child link="caster_rear_link" />
         <axis xyz="0 0 0" />
     </joint>
-
 </robot>

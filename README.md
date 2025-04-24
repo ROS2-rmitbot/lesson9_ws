@@ -4,7 +4,7 @@ Folders and files explanation
 - install:  autocreated, do nothing
 - log:      autocreated, do nothing
 - src:      contains pkg
-    - include:  contains hpp file. Since the pkg do not have nodes, then it is useless. 
+    - include:  contains hpp file. Since the pkg do not have nodes, then it is empty. 
     - launch:   contains launch files, to launch other packages
         - display.launch.py:    launch the following executables: 
             - model_arg,                publish robot description
@@ -20,10 +20,11 @@ Folders and files explanation
             - gz_ros2_bridge,               connect gazebo to ros2
     - meshes:   contains stl file
     - rviz:     contains rivz display configuration
-    - src:      contains cpp file. Since the pkg do not have nodes, then it is useless. 
+    - src:      contains cpp file. Since the pkg do not have nodes, then it is empty. 
     - urdf:     contains the configuration of the robot 
-        - my_robot.urdf.xacro:      robot inerta, visual, and collision
-        - my_robot_gazebo.xacro:    wheels' physics
+        - rmitbot.urdf.xacro:       main file calling other xacro files
+        - rmitbot_platform.xacro:   contains the base platform definition
+        - rmitbot_gazebo.xacro:     contains the wheels' physics for gazebo simulation
     - CMakeLists.txt:   folders that needs to be added to compile in cpp, i.e., :
         - meshes urdf launch rviz folders
     - package.xml:      add packages dependencies, i.e., :

@@ -3,10 +3,16 @@ project(rmitbot_description)
 
 find_package(ament_cmake REQUIRED)
 
-# Folder to be added
+# =======================================
+# Modification of .txt starts here
+# =======================================
+# Folder to be added for compilation
 install(
   DIRECTORY meshes urdf launch rviz
   DESTINATION share/${PROJECT_NAME}
 )
+# =======================================
+# Modification of .txt ends here
+# =======================================
 
 ament_package()

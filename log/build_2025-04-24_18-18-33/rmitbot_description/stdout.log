@@ -7,11 +7,12 @@
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf
--- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot.urdf.xacro
--- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot_gazebo.xacro
+-- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+-- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
+-- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch
--- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
--- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
+-- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
+-- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/rviz
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/rviz/display.rviz
 -- Up-to-date: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/ament_index/resource_index/package_run_dependencies/rmitbot_description

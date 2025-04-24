@@ -17,65 +17,54 @@ from launch_ros.parameter_descriptions import ParameterValue
 # - bunch of package from gazebo-gz
 
 def generate_launch_description():
+    # Get the directory of the package
     rmitbot_description_dir = get_package_share_directory("rmitbot_description")
     
-    model_arg = DeclareLaunchArgument(name="model", default_value=os.path.join(
-                                        rmitbot_description_dir, "urdf", "my_robot.urdf.xacro"
-                                        ),
-                                      description="Absolute path to robot urdf file"
+    # Declare the model argument
+    model_arg = DeclareLaunchArgument(
+        name="model", 
+        default_value=os.path.join(rmitbot_description_dir, "urdf", "rmitbot.urdf.xacro"),
+        description="Absolute path to robot urdf file"
     )
-
-    gazebo_resource_path = SetEnvironmentVariable(
-        name="GZ_SIM_RESOURCE_PATH",
-        value=[
-            str(Path(rmitbot_description_dir).parent.resolve())
-            ]
-        )
     
-    robot_description = ParameterValue(Command([
-            "xacro ",
-            LaunchConfiguration("model")
-        ]),
-        value_type=str
-    )
+    # This line processes your robot’s .xacro file at launch time, converting it to URDF
+    robot_description = ParameterValue(Command(['xacro ', LaunchConfiguration('model')]), value_type=str)
 
+    # This node publishes the robot state to the TF tree
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         parameters=[{"robot_description": robot_description,
                      "use_sim_time": True}]
     )
-    render_engine_arg = DeclareLaunchArgument(
-        'render_engine',
-        default_value='ogre',
-        description='Render engine to use for Gazebo'
+    
+    # This node sets the environment variable for Gazebo resource path
+    # This line makes sure Gazebo can find your robot model
+    gazebo_resource_path = SetEnvironmentVariable(
+        name="GZ_SIM_RESOURCE_PATH",
+        value=[str(Path(rmitbot_description_dir).parent.resolve())]
     )
     
+    # This node launches Gazebo with the specified configuration file
     gazebo = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory("ros_gz_sim"), "launch"), "/gz_sim.launch.py"]),
-                launch_arguments=[
-                    ("gz_args", [" -v 4", " -r", " empty.sdf", " --render-engine", " ogre"]
-                    )
-                ]
-             )
-    # , "--render-engine", "ogre"
-    # gz sim -v4 shapes.sdf --render-engine ogre
-
+        PythonLaunchDescriptionSource(
+            [os.path.join(get_package_share_directory("ros_gz_sim"), "launch"), "/gz_sim.launch.py"]),
+                launch_arguments=[("gz_args", [" -v 4", " -r", " empty.sdf", " --render-engine", " ogre"])]
+    )
+    
+    # This node spawns the robot in Gazebo
     gz_spawn_entity = Node(
         package="ros_gz_sim",
         executable="create",
         output="screen",
-        arguments=["-topic", "robot_description",
-                   "-name", "my_robot"],
+        arguments=["-topic", "robot_description","-name", "rmitbot"],
     )
 
+    # This node bridges the clock messages between ROS2 and Gazebo
     gz_ros2_bridge = Node(
         package="ros_gz_bridge",
         executable="parameter_bridge",
-        arguments=[
-            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
-        ]
+        arguments=["/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"], 
     )
 
     return LaunchDescription([

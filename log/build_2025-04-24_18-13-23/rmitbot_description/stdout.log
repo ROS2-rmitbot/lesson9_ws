@@ -12,7 +12,7 @@
 -- Detecting CXX compile features - done
 -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
 -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
--- Configuring done (1.2s)
+-- Configuring done (0.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/vudinhso/RMIT_Bot/lesson2_ws/build/rmitbot_description
 -- Install configuration: ""
@@ -24,8 +24,9 @@
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf
--- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot.urdf.xacro
--- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot_gazebo.xacro
+-- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+-- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
+-- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
 -- Installing: /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py

@@ -4,8 +4,9 @@
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_rear_link.STL
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
-/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot.urdf.xacro
-/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/my_robot_gazebo.xacro
+/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
+/home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
 /home/vudinhso/RMIT_Bot/lesson2_ws/install/rmitbot_description/share/rmitbot_description/rviz/display.rviz

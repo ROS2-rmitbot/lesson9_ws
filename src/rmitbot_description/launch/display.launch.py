@@ -14,27 +14,33 @@ from launch.substitutions import Command, LaunchConfiguration
 # - RViz2, needs TF from robot_state_publisher and joint_state from joint_state_publisher_gui
 
 def generate_launch_description():
+    # Get the directory of the package
     rmitbot_description_dir = get_package_share_directory("rmitbot_description")
     
+    # Declare the model argument
     model_arg = DeclareLaunchArgument(
         name="model", 
-        default_value=os.path.join(rmitbot_description_dir, 'urdf', 'my_robot.urdf.xacro'),
+        default_value=os.path.join(rmitbot_description_dir, 'urdf', 'rmitbot.urdf.xacro'),
         description="Absolute path to robot urdf file"
     )
     
+    # This line processes your robot’s .xacro file at launch time, converting it to URDF
     robot_description = ParameterValue(Command(['xacro ', LaunchConfiguration('model')]), value_type=str)
     
+    # This node publishes the robot state to the TF tree
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[{"robot_description": robot_description}]
         )
     
+    # This node publishes the joint state to the TF tree
     joint_state_publisher = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
     )
     
+    # This node launches RViz2 with the specified configuration file
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
