@@ -12,13 +12,6 @@
   <!-- ==================================== -->
   <!-- Modifcation of .xml start here -->
   <!-- ==================================== -->
-  <!-- Dependencies to be added for rviz launch file-->
-  <!-- robot_state_publisher:     publish the TF of the robot, for rviz -->
-  <!-- joint_state_publisher_gui: Set and publish the joint state, for rviz -->
-  <!-- rviz2: rviz: visualization of graphical topic -->
-  <!-- ros2launch: launching launch file -->
-  <!-- ros_gz_sim: gazebo: physics engine -->
-
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>rviz2</exec_depend>

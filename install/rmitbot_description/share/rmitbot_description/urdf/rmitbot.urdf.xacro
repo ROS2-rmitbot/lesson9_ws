@@ -6,8 +6,8 @@
 <robot name="rmitbot"
     xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <!-- Include Gazebo Parameters -->
     <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_platform.xacro" />
     <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_gazebo.xacro" />
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_ros2_control.xacro" /> 
 
 </robot>
