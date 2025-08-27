@@ -1,11 +1,18 @@
 <?xml version="1.0"?>
+<robot name="rmitbot"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-<robot name="rmitbot" xmlns:xacro="http://www.ros.org/wiki/xacro"> Define the vehicles hardware,
-    command and state interfaces <ros2_control name="GazeboSimSystem" type="system">
-        <hardware>
+    <!-- <ros2_control name="GazeboSimSystem" type="system"> -->
+    <ros2_control name="RobotSystem" type="system">
+        <!-- <hardware>
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </hardware> -->
+        <hardware>
+            <plugin>rmitbot_firmware/RmitbotInterface</plugin>
+            <param name="port">/dev/ttyUSB0</param>
         </hardware>
+
+
         <joint name="front_left_wheel_joint">
             <command_interface name="velocity">
                 <param name="min">-1</param>
@@ -41,7 +48,7 @@
     </ros2_control>
 
     <!-- ROS2 Control plugin and topic re-mapping -->
-  <gazebo>
+    <gazebo>
         <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
             <parameters>$(find rmitbot_controller)/config/rmitbot_controller.yaml</parameters>
             <ros>

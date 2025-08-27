@@ -10,27 +10,26 @@ from launch.substitutions import Command, LaunchConfiguration
 # ros2 launch rmitbot_description display.launch.py
 
 def generate_launch_description():
+    
+  
     # Path to the package
     pkg_path = get_package_share_directory("rmitbot_description")
     
     # Path to the urdf file
-    urdf_path = os.path.join(pkg_path, 
-                             'urdf', 
-                             'rmitbot.urdf.xacro')
+    urdf_path = os.path.join(pkg_path, 'urdf', 'rmitbot.urdf.xacro')
     
     # Path to the rviz config file
-    rviz_path = os.path.join(pkg_path, 
-                             'rviz', 
-                             'display.rviz')
+    rviz_path = os.path.join(pkg_path, 'rviz', 'display.rviz')
     
-    # Compile the xacro to urdf
+    # Compile the xacro file to urdf
     robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
     
     # Publish the robot static TF from the urdf
     robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        parameters=[{"robot_description": robot_description}]
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        parameters=[{"use_sim_time": False, 
+                     "robot_description": robot_description}],
         )
     
     # Publish the joint state TF
@@ -46,6 +45,7 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', rviz_path],
+        parameters=[{"use_sim_time": False}],
     )
     
     return LaunchDescription([

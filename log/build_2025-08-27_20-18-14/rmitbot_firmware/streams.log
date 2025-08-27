@@ -1,0 +1,37 @@
+[0.032s] Invoking command in '/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware -- -j4 -l4
+[0.150s] [ 50%] [32mBuilding CXX object CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o[0m
+[5.874s] [100%] [32m[1mLinking CXX shared library librmitbot_firmware.so[0m
+[6.353s] [100%] Built target rmitbot_firmware
+[6.373s] Invoked command in '/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware -- -j4 -l4
+[6.375s] Invoking command in '/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware
+[6.387s] -- Install configuration: ""
+[6.387s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/rmitbot_interface.xml
+[6.392s] -- Installing: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/lib/librmitbot_firmware.so
+[6.392s] -- Set non-toolchain portion of runtime path of "/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/lib/librmitbot_firmware.so" to ""
+[6.393s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/include
+[6.393s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/include/rmitbot_firmware
+[6.393s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/include/rmitbot_firmware/rmitbot_interface.hpp
+[6.393s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/launch
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/launch/hardware.launch.py
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/library_path.sh
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/library_path.dsv
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/package_run_dependencies/rmitbot_firmware
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/parent_prefix_path/rmitbot_firmware
+[6.394s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/ament_prefix_path.sh
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/ament_prefix_path.dsv
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/path.sh
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/path.dsv
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.bash
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.sh
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.zsh
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.dsv
+[6.395s] -- Installing: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/package.dsv
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/packages/rmitbot_firmware
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/rmitbot_firmware
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.395s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_libraries-extras.cmake
+[6.396s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.396s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/rmitbot_firmwareConfig.cmake
+[6.396s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/rmitbot_firmwareConfig-version.cmake
+[6.396s] -- Up-to-date: /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/package.xml
+[6.397s] Invoked command in '/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_firmware

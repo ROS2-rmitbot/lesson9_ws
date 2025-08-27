@@ -13,8 +13,7 @@ def generate_launch_description():
     display = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_description"),
-            "launch",
-            "display.launch.py"
+            "launch", "display.launch.py"
         ),
     )
     
@@ -22,8 +21,15 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_description"),
-            "launch",
-            "gazebo.launch.py"
+            "launch", "gazebo.launch.py"
+        ),
+    )
+    
+    # Launch hardware
+    hardware = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_firmware"),
+            "launch", "hardware.launch.py"
         ),
     )
     
@@ -31,8 +37,7 @@ def generate_launch_description():
     controller = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_controller"),
-            "launch",
-            "controller.launch.py"
+            "launch", "controller.launch.py"
         ),
     )
     
@@ -46,8 +51,7 @@ def generate_launch_description():
     teleopkeyboard = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_controller"),
-            "launch",
-            "teleopkeyboard.launch.py"
+            "launch", "teleopkeyboard.launch.py"
         ),
         launch_arguments={
             "use_sim_time": "True"
@@ -56,7 +60,8 @@ def generate_launch_description():
     
     return LaunchDescription([
         display, 
-        gazebo,
+        hardware, 
+        # gazebo,
         controller_delayed, 
         teleopkeyboard,
     ])

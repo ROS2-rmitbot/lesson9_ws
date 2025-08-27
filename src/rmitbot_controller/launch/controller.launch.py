@@ -17,9 +17,8 @@ def generate_launch_description():
     
     # Path to the controller config file
     pkg_path = get_package_share_directory("rmitbot_controller")
-    robot_controllers = os.path.join(pkg_path, 
-                             'config', 
-                             'rmitbot_controller.yaml')
+    
+    ctrl_yaml_path = os.path.join(pkg_path, 'config', 'rmitbot_controller.yaml')
 
     # joint_state_broadcaster (jsb): dynamic TF of the motor joints 
     joint_state_broadcaster_spawner = Node(
@@ -35,10 +34,10 @@ def generate_launch_description():
         arguments=[
             'mecanum_drive_controller',
             '--param-file',
-            robot_controllers,
+            ctrl_yaml_path,
             '--controller-ros-args',
             '-r /mecanum_drive_controller/tf_odometry:=/tf',
-            '--controller-ros-args',
+            # '--controller-ros-args',
             '-r /mecanum_drive_controller/reference:=/rmitbot_controller/cmd_vel',
         ],
     )

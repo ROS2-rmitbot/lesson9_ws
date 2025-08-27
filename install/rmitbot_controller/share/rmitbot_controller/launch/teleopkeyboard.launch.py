@@ -18,7 +18,7 @@ def generate_launch_description():
         output='screen',
         prefix='xterm -e',
         parameters=[
-            {"use_sim_time": True},
+            {"use_sim_time": False},
             {'stamped': True}], 
         remappings=[
             ('cmd_vel', '/rmitbot_controller/cmd_vel')]

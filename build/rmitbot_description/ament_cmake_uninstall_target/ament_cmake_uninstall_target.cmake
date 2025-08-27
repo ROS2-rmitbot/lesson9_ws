@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/v120506/rmitbot_v3/lesson2_ws/install/rmitbot_description")
+  set(install_space "/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/install/rmitbot_description")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/v120506/rmitbot_v3/lesson2_ws/build/rmitbot_description/install_manifest.txt")
+set(install_manifest "/home/vudinhso/rmitbot_eeet2610_ws/lesson7_ws/build/rmitbot_description/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
