@@ -1,0 +1,32 @@
+[0.016s] Invoking command in '/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware -- -j8 -l8
+[0.075s] [100%] Built target rmitbot_firmware
+[0.087s] Invoked command in '/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware -- -j8 -l8
+[0.099s] Invoking command in '/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware
+[0.107s] -- Install configuration: ""
+[0.107s] -- Execute custom install script
+[0.107s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware//rmitbot_interface.xml
+[0.108s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/lib/librmitbot_firmware.so
+[0.108s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/include/rmitbot_firmware/rmitbot_interface.hpp
+[0.109s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/launch/hardware.launch.py
+[0.109s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/library_path.sh
+[0.109s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/library_path.dsv
+[0.110s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/package_run_dependencies/rmitbot_firmware
+[0.110s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/parent_prefix_path/rmitbot_firmware
+[0.110s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/ament_prefix_path.sh
+[0.110s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/ament_prefix_path.dsv
+[0.111s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/path.sh
+[0.111s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/environment/path.dsv
+[0.111s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.bash
+[0.111s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.sh
+[0.112s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.zsh
+[0.112s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/local_setup.dsv
+[0.112s] -- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/package.dsv
+[0.126s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/packages/rmitbot_firmware
+[0.126s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/rmitbot_firmware
+[0.127s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.127s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_libraries-extras.cmake
+[0.127s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.127s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/rmitbot_firmwareConfig.cmake
+[0.127s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/cmake/rmitbot_firmwareConfig-version.cmake
+[0.128s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_firmware/share/rmitbot_firmware/package.xml
+[0.130s] Invoked command in '/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware

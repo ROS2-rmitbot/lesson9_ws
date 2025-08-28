@@ -1,17 +1,11 @@
 <?xml version="1.0"?>
-<robot name="rmitbot"
-    xmlns:xacro="http://www.ros.org/wiki/xacro">
-
-    <!-- <ros2_control name="GazeboSimSystem" type="system"> -->
-    <ros2_control name="RobotSystem" type="system">
-        <!-- <hardware>
-            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-        </hardware> -->
+<robot name="rmitbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+    
+    <ros2_control name="RobotSystem" type="system">    
         <hardware>
             <plugin>rmitbot_firmware/RmitbotInterface</plugin>
             <param name="port">/dev/ttyUSB0</param>
         </hardware>
-
 
         <joint name="front_left_wheel_joint">
             <command_interface name="velocity">
@@ -21,6 +15,7 @@
             <state_interface name="position" />
             <state_interface name="velocity" />
         </joint>
+
         <joint name="front_right_wheel_joint">
             <command_interface name="velocity">
                 <param name="min">-1</param>
@@ -29,6 +24,7 @@
             <state_interface name="position" />
             <state_interface name="velocity" />
         </joint>
+
         <joint name="rear_left_wheel_joint">
             <command_interface name="velocity">
                 <param name="min">-1</param>
@@ -37,6 +33,7 @@
             <state_interface name="position" />
             <state_interface name="velocity" />
         </joint>
+        
         <joint name="rear_right_wheel_joint">
             <command_interface name="velocity">
                 <param name="min">-1</param>
@@ -47,7 +44,6 @@
         </joint>
     </ros2_control>
 
-    <!-- ROS2 Control plugin and topic re-mapping -->
     <gazebo>
         <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
             <parameters>$(find rmitbot_controller)/config/rmitbot_controller.yaml</parameters>

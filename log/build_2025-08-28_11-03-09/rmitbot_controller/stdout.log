@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/launch/controller.launch.py
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/launch/teleopkeyboard.launch.py
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/config/rmitbot_controller.yaml
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/ament_index/resource_index/package_run_dependencies/rmitbot_controller
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/ament_index/resource_index/parent_prefix_path/rmitbot_controller
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/environment/path.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/environment/path.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.bash
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.zsh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/package.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/ament_index/resource_index/packages/rmitbot_controller
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/cmake/rmitbot_controllerConfig.cmake
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/cmake/rmitbot_controllerConfig-version.cmake
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_controller/share/rmitbot_controller/package.xml

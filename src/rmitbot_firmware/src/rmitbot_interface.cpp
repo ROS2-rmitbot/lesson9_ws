@@ -4,11 +4,9 @@
 
 namespace rmitbot_firmware
 {
-
   RmitbotInterface::RmitbotInterface()
   {
   }
-
 
   RmitbotInterface::~RmitbotInterface()
   {
@@ -25,7 +23,6 @@ namespace rmitbot_firmware
       }
     }
   }
-
 
   CallbackReturn RmitbotInterface::on_init(const hardware_interface::HardwareInfo &hardware_info)
   {

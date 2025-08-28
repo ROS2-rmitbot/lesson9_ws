@@ -1,5 +1,3 @@
-// There is nothing to modify in this file. Keep it as is. 
-
 // These prevent the file from being included more than once during compilation
 #ifndef RMITBOT_INTERFACE_HPP
 #define RMITBOT_INTERFACE_HPP

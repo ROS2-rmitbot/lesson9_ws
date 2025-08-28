@@ -17,7 +17,7 @@ def generate_launch_description():
         ),
     )
     
-    # Launch gazebo
+    # Launch gazebo - not used for real robot
     gazebo = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_description"),
@@ -25,7 +25,7 @@ def generate_launch_description():
         ),
     )
     
-    # Launch hardware
+    # Launch hardware - mandatory for real robot
     hardware = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_firmware"),
@@ -33,7 +33,7 @@ def generate_launch_description():
         ),
     )
     
-    # Launch the controller manager
+    # Launch the controller manager spawner
     controller = IncludeLaunchDescription(
         os.path.join(
             get_package_share_directory("rmitbot_controller"),

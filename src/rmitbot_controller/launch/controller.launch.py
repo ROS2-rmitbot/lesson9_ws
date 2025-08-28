@@ -37,7 +37,7 @@ def generate_launch_description():
             ctrl_yaml_path,
             '--controller-ros-args',
             '-r /mecanum_drive_controller/tf_odometry:=/tf',
-            # '--controller-ros-args',
+            '--controller-ros-args',
             '-r /mecanum_drive_controller/reference:=/rmitbot_controller/cmd_vel',
         ],
     )

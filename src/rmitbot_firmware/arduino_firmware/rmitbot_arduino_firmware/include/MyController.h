@@ -12,7 +12,7 @@ public:
     void compute();                           // Method to compute the PID control output
 
 private:
-    double _kp = 2., _ki = 1., _kd = .00; // PID Parameters - to be tuned
+    double _kp = 1., _ki = 10., _kd = .00; // PID Parameters - to be tuned
     double *_input, *_output, *_ref;     // Input variable for the PID controller
     int _direct = 0;                     // Direction of the PID controller
     PID _PID;                            // PID object to handle the PID control

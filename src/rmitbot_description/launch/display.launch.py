@@ -32,7 +32,7 @@ def generate_launch_description():
                      "robot_description": robot_description}],
         )
     
-    # Publish the joint state TF
+    # Publish the joint state TF - Not needed with a controller
     joint_state_publisher_gui = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',

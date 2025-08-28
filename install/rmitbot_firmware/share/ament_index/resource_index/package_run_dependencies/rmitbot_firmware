@@ -1,1 +1,1 @@
-rclcpp;std_msgs;hardware_interface;rclcpp_lifecycle;pluginlib;libserial-dev;python3-serial;ament_lint_auto;ament_lint_common
+/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rmitbot_firmware

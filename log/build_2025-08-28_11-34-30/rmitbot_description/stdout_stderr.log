@@ -1,0 +1,35 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/base_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_front_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_rear_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_left_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_ros2_control.xacro
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/rviz/display.rviz
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/ament_index/resource_index/package_run_dependencies/rmitbot_description
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/ament_index/resource_index/parent_prefix_path/rmitbot_description
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/environment/path.sh
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/environment/path.dsv
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/local_setup.bash
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/local_setup.sh
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/local_setup.zsh
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/local_setup.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/package.dsv
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/ament_index/resource_index/packages/rmitbot_description
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig.cmake
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson7_ws/install/rmitbot_description/share/rmitbot_description/package.xml

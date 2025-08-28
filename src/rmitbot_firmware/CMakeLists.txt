@@ -25,8 +25,6 @@ target_include_directories(${PROJECT_NAME}
     $<INSTALL_INTERFACE:include>
 )
 
-
-
 target_link_libraries(${PROJECT_NAME}
  "${SERIAL_LDFLAGS}")
 ament_target_dependencies(${PROJECT_NAME}
@@ -71,6 +69,5 @@ ament_export_dependencies(
   rclcpp
   rclcpp_lifecycle
 )
-
 
 ament_package()

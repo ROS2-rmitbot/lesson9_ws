@@ -18,7 +18,6 @@
     <origin xyz="0 0 0.05" rpy="0 0 0" />
   </joint>
 
-  <!-- Base Link -->
   <link name="base_link">
     <collision>
       <origin xyz="0 0 0.05" rpy="0 0 0" />
@@ -46,7 +45,6 @@
     </inertial>
   </link>
 
-  <!-- front left wheel -->
   <joint name="front_left_wheel_joint" type="continuous">
     <origin xyz="0.14 0.15 0" rpy="-${pi/2} 0 0" />
     <parent link="base_link" />
@@ -57,23 +55,19 @@
 
   <link name="front_left_wheel">
     <collision>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
       <origin xyz="0 0 .025" rpy="0 0 0" />
       <geometry>
         <sphere radius="0.05" />
       </geometry>
     </collision>
     <visual>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
       <origin xyz="0 0 .025" rpy="0 0 0" />
       <geometry>
-        <!-- <sphere radius="0.3" /> -->
         <cylinder radius="0.05" length="0.05" />
       </geometry>
       <material name="black" />
     </visual>
     <inertial>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
        <origin xyz="0 0 .025" rpy="0 0 0" />
       <mass value="0.5" />
       <inertia ixx="0.0025"
@@ -85,7 +79,6 @@
     </inertial>
   </link>
 
-  <!-- front right wheel -->
   <joint name="front_right_wheel_joint" type="continuous">
     <origin xyz="0.14 -0.15 0." rpy="-${pi/2} 0 0" />
     <parent link="base_link" />
@@ -95,7 +88,6 @@
   </joint>
   <link name="front_right_wheel">
     <collision>
-      <!-- <origin xyz="0 0 -.06" rpy="0 0 0" /> -->
       <origin xyz="0 0 -.025" rpy="0 0 0" />
       <geometry>
         <sphere radius="0.05" />
@@ -109,7 +101,6 @@
       <material name="black" />
     </visual>
     <inertial>
-      <!-- <origin xyz="0 0 -.06" rpy="0 0 0" /> -->
       <origin xyz="0 0 -.025" rpy="0 0 0" />
       <mass value=".5" />
       <inertia ixx="0.0025"
@@ -121,7 +112,6 @@
     </inertial>
   </link>
 
-  <!-- rear left wheel -->
   <joint name="rear_left_wheel_joint" type="continuous">
     <origin xyz="-0.14 0.15 0." rpy="-${pi/2} 0 0" />
     <parent link="base_link" />
@@ -131,14 +121,12 @@
   </joint>
   <link name="rear_left_wheel">
     <collision>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
        <origin xyz="0 0 .025" rpy="0 0 0" />
       <geometry>
         <sphere radius="0.05" />
       </geometry>
     </collision>
     <visual>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
        <origin xyz="0 0 .025" rpy="0 0 0" />
       <geometry>
         <cylinder radius="0.05" length="0.05" />
@@ -146,7 +134,6 @@
       <material name="black" />
     </visual>
     <inertial>
-      <!-- <origin xyz="0 0 .06" rpy="0 0 0" /> -->
        <origin xyz="0 0 .025" rpy="0 0 0" />
       <mass value="0.5" />
       <inertia ixx="0.0025"
@@ -158,7 +145,6 @@
     </inertial>
   </link>
 
-  <!-- rear right wheel -->
   <joint name="rear_right_wheel_joint" type="continuous">
     <origin xyz="-0.14 -0.15 0." rpy="-${pi/2} 0 0" />
     <parent link="base_link" />
@@ -168,14 +154,12 @@
   </joint>
   <link name="rear_right_wheel">
     <collision>
-      <!-- <origin xyz="0 0 -.06" rpy="0 0 0" /> -->
        <origin xyz="0 0 -.025" rpy="0 0 0" />
       <geometry>
         <sphere radius="0.05" />
       </geometry>
     </collision>
     <visual>
-      <!-- <origin xyz="0 0 -.06" rpy="0 0 0" /> -->
        <origin xyz="0 0 -.025" rpy="0 0 0" />
       <geometry>
         <cylinder radius="0.05" length="0.05" />
@@ -183,7 +167,6 @@
       <material name="black" />
     </visual>
     <inertial>
-      <!-- <origin xyz="0 0 -.06" rpy="0 0 0" /> -->
        <origin xyz="0 0 -.025" rpy="0 0 0" />
       <mass value="0.5" />
       <inertia ixx="0.0025"

@@ -1,6 +1,1 @@
-<library path="rmitbot_firmware">
-  <class  name="rmitbot_firmware/RmitbotInterface" 
-          type="rmitbot_firmware::RmitbotInterface" 
-          base_class_type="hardware_interface::SystemInterface">
-  </class>
-</library>
+/home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_firmware/rmitbot_interface.xml
