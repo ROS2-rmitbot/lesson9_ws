@@ -54,14 +54,27 @@ def generate_launch_description():
             "launch", "teleopkeyboard.launch.py"
         ),
         launch_arguments={
-            "use_sim_time": "True"
+            "use_sim_time": "False"
         }.items()
     )
     
+    # If the ESP32 is connected to the PC, then launch from the PC
+    # display
+    # hardware, 
+    # controller_delayed
+    # teleopkeyboard
+    
+    # If the ESP32 is connected to the RPI, then launch from the PC
+    # display
+    # teleopkeyboard
+    # and launch from the RPI
+    # hardware, 
+    # controller_delayed
+    
     return LaunchDescription([
-        display, 
-        hardware, 
-        # gazebo,
-        controller_delayed, 
-        teleopkeyboard,
+        display,                # Must be launched by the PC
+        # hardware,             # if ESP32 is connected to the PC via USB, launch from PC, otherwise launch from RPI
+        # gazebo,               # not used for real robot
+        # controller_delayed,   # if ESP32 is connected to the PC via USB, launch from PC, otherwise launch from RPI
+        teleopkeyboard,         # Must be launched by the PC
     ])

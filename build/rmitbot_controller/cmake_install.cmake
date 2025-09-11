@@ -43,7 +43,69 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE DIRECTORY FILES
+    "/home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_controller/launch"
+    "/home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_controller/config"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rmitbot_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rmitbot_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller/environment" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller/environment" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_index/share/ament_index/resource_index/packages/rmitbot_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller/cmake" TYPE FILE FILES
+    "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_core/rmitbot_controllerConfig.cmake"
+    "/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_core/rmitbot_controllerConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmitbot_controller" TYPE FILE FILES "/home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_controller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

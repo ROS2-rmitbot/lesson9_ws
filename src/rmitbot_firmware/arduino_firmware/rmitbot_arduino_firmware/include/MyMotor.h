@@ -14,8 +14,10 @@ public:
 private:
     byte _MOTA, _MOTB;     // Pin used on ESP32 for the MOT_A
     int _PWMA, _PWMB;      // PWM Channel attached to MOT_A
-    int _PWM_FREQ = 20000; // Frequency of the PWM signal
-    int _PWM_RES = 8;      // Resolution of the PWM signal
+    // int _PWM_FREQ = 20000; // Frequency of the PWM signal
+    // int _PWM_RES = 8;      // Resolution of the PWM signal
+    int _PWM_FREQ = 12000; // Frequency of the PWM signal
+    int _PWM_RES = 12;      // Resolution of the PWM signal
 };
 
 #endif

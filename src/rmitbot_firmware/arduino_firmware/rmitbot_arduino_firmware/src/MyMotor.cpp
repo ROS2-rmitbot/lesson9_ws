@@ -26,12 +26,12 @@ void Motor::send_pwm(double motor_cmd)
 {
     if (motor_cmd < 0)
     {
-        ledcWrite(_PWMA, 0);
+        ledcWrite(_PWMA, 1);
         ledcWrite(_PWMB, abs(motor_cmd));
     }
     else
     {
-        ledcWrite(_PWMB, 0);
+        ledcWrite(_PWMB, 1);
         ledcWrite(_PWMA, abs(motor_cmd));
     }
 }

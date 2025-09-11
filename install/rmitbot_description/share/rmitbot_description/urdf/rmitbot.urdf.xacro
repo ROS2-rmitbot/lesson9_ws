@@ -1,1 +1,12 @@
-/home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_description/urdf/rmitbot.urdf.xacro
+<?xml version="1.0"?>
+
+<robot name="rmitbot"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_platform.xacro" />
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_gazebo.xacro" />
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_ros2_control.xacro" /> 
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_laser.xacro" />
+
+
+</robot>

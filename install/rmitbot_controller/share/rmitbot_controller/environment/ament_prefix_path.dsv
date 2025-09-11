@@ -1,1 +1,1 @@
-/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv
+prepend-non-duplicate;AMENT_PREFIX_PATH;

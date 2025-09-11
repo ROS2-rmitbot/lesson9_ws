@@ -11,7 +11,8 @@ Controller::Controller(double *input, double *output, double *ref)
 void Controller::begin()
 {
     _PID.SetMode(AUTOMATIC);         // Set the PID controller to automatic mode
-    _PID.SetOutputLimits(-255, 255); // Set the output limits for the PID controller
+    // _PID.SetOutputLimits(-255, 255); // Set the output limits for the PID controller
+    _PID.SetOutputLimits(-4096, 4096); // Set the output limits for the PID controller
     _PID.SetSampleTime(10);          // Set the sample time for the PID controller
 }
 void Controller::compute()

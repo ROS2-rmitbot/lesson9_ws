@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
