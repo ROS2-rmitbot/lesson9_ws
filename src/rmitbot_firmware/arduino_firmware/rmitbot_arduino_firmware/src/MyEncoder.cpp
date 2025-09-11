@@ -22,7 +22,7 @@ long Encoder::getCount() // Get the current count from the encoder
 
 double Encoder::getVelocity() // Get the velocity of the encoder
 {
-    th = _encoder.getCount() * 2 * PI / _ENC_RES; // motor angular position in radians
+    th = _encoder.getCount() / 4 * 2 * PI / _ENC_RES; // motor angular position in radians
     if (micros() - w_time >= 100 * 1e3)           // Velocity is calculated every 100ms
     {
         w_raw = (th - th_prev) / ((micros() - w_time) * 1e-6); // Calculate the unfiltered velocity

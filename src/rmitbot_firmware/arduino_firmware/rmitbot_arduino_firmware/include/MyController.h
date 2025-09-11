@@ -13,7 +13,7 @@ public:
 
 private:
     // double _kp = 1., _ki = 10., _kd = .00; // PID Parameters - to be tuned
-    double _kp = 40., _ki = 100., _kd = .00; // PID Parameters - to be tuned
+    double _kp = 200., _ki = 1000., _kd = .00; // PID Parameters - to be tuned
     double *_input, *_output, *_ref;     // Input variable for the PID controller
     int _direct = 0;                     // Direction of the PID controller
     PID _PID;                            // PID object to handle the PID control
