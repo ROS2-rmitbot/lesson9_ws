@@ -13,10 +13,10 @@
 // ==============================================
 // Pin definitions for the motors
 // ==============================================
-#define MOT1_A 33 // Pin used on ESP32 for the MOT1_A
-#define MOT1_B 25 // Pin used on ESP32 for the MOT1_B
-#define MOT2_A 21 // Pin used on ESP32 for the MOT2_A
-#define MOT2_B 19 // Pin used on ESP32 for the MOT2_B
+#define MOT1_A 25 // Pin used on ESP32 for the MOT1_A
+#define MOT1_B 33 // Pin used on ESP32 for the MOT1_B
+#define MOT2_A 19 // Pin used on ESP32 for the MOT2_A
+#define MOT2_B 21 // Pin used on ESP32 for the MOT2_B
 #define MOT3_A 27 // Pin used on ESP32 for the MOT3_A
 #define MOT3_B 26 // Pin used on ESP32 for the MOT3_B
 #define MOT4_A 18 // Pin used on ESP32 for the MOT4_A

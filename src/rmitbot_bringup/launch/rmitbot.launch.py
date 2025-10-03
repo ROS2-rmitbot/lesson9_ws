@@ -48,7 +48,7 @@ def generate_launch_description():
     
     return LaunchDescription([
         display,
-        controller,
+        # controller,
         teleopkeyboard,
         localization,
     ])
