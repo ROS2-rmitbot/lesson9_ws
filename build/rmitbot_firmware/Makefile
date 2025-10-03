@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v120506/rmitbot_v3/lesson7_ws/src/rmitbot_firmware
+CMAKE_SOURCE_DIR = /home/v120506/rmitbot_v4/lesson8_ws/src/rmitbot_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware
+CMAKE_BINARY_DIR = /home/v120506/rmitbot_v4/lesson8_ws/build/rmitbot_firmware
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware/CMakeFiles /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v120506/rmitbot_v4/lesson8_ws/build/rmitbot_firmware/CMakeFiles /home/v120506/rmitbot_v4/lesson8_ws/build/rmitbot_firmware//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v120506/rmitbot_v3/lesson7_ws/build/rmitbot_firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v120506/rmitbot_v4/lesson8_ws/build/rmitbot_firmware/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

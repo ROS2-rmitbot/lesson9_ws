@@ -10,15 +10,10 @@ find_package(rclcpp_lifecycle REQUIRED)
 find_package(PkgConfig)
 pkg_check_modules(SERIAL libserial)
 
-# ament_python_install_package(${PROJECT_NAME})
-
 add_library(${PROJECT_NAME} SHARED 
   src/rmitbot_interface.cpp
 )
-# target_include_directories(${PROJECT_NAME} PRIVATE 
-#   include
-#   "${SERIAL_INCLUDE_DIRS}"
-# )
+
 target_include_directories(${PROJECT_NAME}
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -41,18 +36,8 @@ install(
   DESTINATION lib
 )
 
-# install(
-#   DIRECTORY include
-#   DESTINATION include
-# )
-
 install(DIRECTORY include/
   DESTINATION include
-)
-
-install(
-  DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_export_include_directories(

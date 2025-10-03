@@ -17,21 +17,6 @@ def generate_launch_description():
         ),
     )
     
-    # Launch gazebo - not used for real robot
-    gazebo = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_description"),
-            "launch", "gazebo.launch.py"
-        ),
-    )
-    
-    # Launch hardware - mandatory for real robot
-    hardware = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_firmware"),
-            "launch", "hardware.launch.py"
-        ),
-    )
     
     # Launch the controller manager spawner
     controller = IncludeLaunchDescription(
@@ -41,11 +26,6 @@ def generate_launch_description():
         ),
     )
     
-    # Launch the controller manager 3s after gazebo, to make sure the robot has spawned in simulation
-    controller_delayed = TimerAction(
-        period = 3., 
-        actions=[controller]
-    )
     
     # Launch the teleop keyboard node
     teleopkeyboard = IncludeLaunchDescription(
@@ -58,23 +38,17 @@ def generate_launch_description():
         }.items()
     )
     
-    # If the ESP32 is connected to the PC, then launch from the PC
-    # display
-    # hardware, 
-    # controller_delayed
-    # teleopkeyboard
-    
-    # If the ESP32 is connected to the RPI, then launch from the PC
-    # display
-    # teleopkeyboard
-    # and launch from the RPI
-    # hardware, 
-    # controller_delayed
+    localization = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_localization"),
+            "launch",
+            "localization.launch.py"
+        ),
+    )
     
     return LaunchDescription([
-        display,                # Must be launched by the PC
-        # hardware,             # if ESP32 is connected to the PC via USB, launch from PC, otherwise launch from RPI
-        # gazebo,               # not used for real robot
-        # controller_delayed,   # if ESP32 is connected to the PC via USB, launch from PC, otherwise launch from RPI
-        teleopkeyboard,         # Must be launched by the PC
+        display,
+        controller,
+        teleopkeyboard,
+        localization,
     ])

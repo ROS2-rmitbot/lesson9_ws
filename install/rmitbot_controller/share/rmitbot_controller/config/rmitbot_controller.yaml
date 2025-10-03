@@ -9,6 +9,9 @@ controller_manager:
     mecanum_drive_controller:
       type: mecanum_drive_controller/MecanumDriveController
 
+    imu_sensor_broadcaster:
+      type: imu_sensor_broadcaster/IMUSensorBroadcaster
+
 mecanum_drive_controller:
   ros__parameters: 
     reference_timeout: 1.0 
@@ -22,4 +25,9 @@ mecanum_drive_controller:
         sum_of_robot_center_projection_on_X_Y_axis: 0.29
     base_frame_id: "base_footprint"
     odom_frame_id: "odom"
-    enable_odom_tf: true
+    enable_odom_tf: false #true
+
+imu_sensor_broadcaster:
+  ros__parameters:
+    sensor_name: "imu_sensor"
+    frame_id:  "imu_link"

@@ -17,21 +17,6 @@ def generate_launch_description():
         ),
     )
     
-    # Launch gazebo - not used for real robot
-    gazebo = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_description"),
-            "launch", "gazebo.launch.py"
-        ),
-    )
-    
-    # Launch hardware - mandatory for real robot
-    hardware = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_firmware"),
-            "launch", "hardware.launch.py"
-        ),
-    )
     
     # Launch the controller manager spawner
     controller = IncludeLaunchDescription(
@@ -41,11 +26,6 @@ def generate_launch_description():
         ),
     )
     
-    # Launch the controller manager 3s after gazebo, to make sure the robot has spawned in simulation
-    controller_delayed = TimerAction(
-        period = 3., 
-        actions=[controller]
-    )
     
     # Launch the teleop keyboard node
     teleopkeyboard = IncludeLaunchDescription(
@@ -54,14 +34,21 @@ def generate_launch_description():
             "launch", "teleopkeyboard.launch.py"
         ),
         launch_arguments={
-            "use_sim_time": "True"
+            "use_sim_time": "False"
         }.items()
     )
     
+    localization = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_localization"),
+            "launch",
+            "localization.launch.py"
+        ),
+    )
+    
     return LaunchDescription([
-        display, 
-        # hardware, 
-        # gazebo,
-        # controller_delayed, 
+        display,
+        controller,
         teleopkeyboard,
+        localization,
     ])

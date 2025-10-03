@@ -1,0 +1,17 @@
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/launch/localization.launch.py
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/config/ekf.yaml
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/ament_index/resource_index/package_run_dependencies/rmitbot_localization
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/ament_index/resource_index/parent_prefix_path/rmitbot_localization
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/environment/ament_prefix_path.sh
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/environment/ament_prefix_path.dsv
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/environment/path.sh
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/environment/path.dsv
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.bash
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.sh
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.zsh
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.dsv
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/package.dsv
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/ament_index/resource_index/packages/rmitbot_localization
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/cmake/rmitbot_localizationConfig.cmake
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/cmake/rmitbot_localizationConfig-version.cmake
+/home/v120506/rmitbot_v4/lesson8_ws/install/rmitbot_localization/share/rmitbot_localization/package.xml

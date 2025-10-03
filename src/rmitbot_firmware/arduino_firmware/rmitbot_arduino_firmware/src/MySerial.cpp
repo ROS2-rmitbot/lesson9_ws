@@ -8,6 +8,9 @@ extern volatile long EncoderTick1;  // Encoder tick count for encoder 1 - define
 extern volatile long EncoderTick2;  // Encoder tick count for encoder 2 - defined in MySetup.h
 extern volatile long EncoderTick3;  // Encoder tick count for encoder 1 - defined in MySetup.h
 extern volatile long EncoderTick4;  // Encoder tick count for encoder 2 - defined in MySetup.h
+extern double quat[4];          // Quaternion data from the IMU - defined in MySetup.h
+extern double gyr[3];           // Gyroscope data from the IMU - defined in MySetup.h
+extern double acc[3];           // Accelerometer data from the IMU - defined in MySetup.h
 extern unsigned long Serial_time;   // Time for serial communication - defined in MySetup.h
 String incomingMessage = "";
 bool receiving = false;
@@ -28,8 +31,19 @@ void SerialDataPrint() // Function to print the data to the Serial Monitor
         Serial.print(w1); Serial.print("\t");
         Serial.print(w2); Serial.print("\t");
         Serial.print(w3); Serial.print("\t");
-        Serial.print(w4); 
-        Serial.println('>');
+        Serial.print(w4); Serial.print("\t");
+        Serial.print(quat[0]); Serial.print("\t");
+        Serial.print(quat[1]); Serial.print("\t");
+        Serial.print(quat[2]); Serial.print("\t");
+        Serial.print(quat[3]); Serial.print("\t");
+
+        Serial.print(gyr[0]); Serial.print("\t");
+        Serial.print(gyr[1]); Serial.print("\t");
+        Serial.print(gyr[2]); Serial.print("\t");
+
+        Serial.print(acc[0]); Serial.print("\t");
+        Serial.print(acc[1]); Serial.print("\t");
+        Serial.print(acc[2]); Serial.println(">");
     }
 }
 
@@ -56,46 +70,6 @@ void SerialDataRead()
     }
 }
 
-// void parseCommand(const String &msg)
-// {
-//     Serial.print("Received: "); Serial.println(msg);
-//     double values[4] = {0};
-//     int index = 0;
-//     int lastPos = 0;
- 
-//     for (int i = 0; i < 3; i++) {
-//         int tabPos = msg.indexOf('\t', lastPos);
-//         if (tabPos == -1) return; // Malformed
-//         values[i] = msg.substring(lastPos, tabPos).toFloat();
-//         lastPos = tabPos + 1;
-//     }
-//     values[3] = msg.substring(lastPos).toFloat(); // Last value
- 
-//     w1_ref = values[0];
-//     w2_ref = values[1];
-//     w3_ref = values[2];
-//     w4_ref = values[3];
- 
-//     Serial.print("Parsed refs: ");
-//     Serial.print(w1_ref); Serial.print(", ");
-//     Serial.print(w2_ref); Serial.print(", ");
-//     Serial.print(w3_ref); Serial.print(", ");
-//     Serial.println(w4_ref);
-// }
-
-// void parseCommand(const String &msg)
-// {
-//     int tabIndex = msg.indexOf('\t');
-
-//     if (tabIndex > 0)
-//     {
-//         String w1_str = msg.substring(0, tabIndex);
-//         String w2_str = msg.substring(tabIndex + 1);
-
-//         w1_ref = w1_str.toFloat();
-//         w2_ref = w2_str.toFloat();
-//     }
-// }
 
 void parseCommand(const String &msg)
 {
