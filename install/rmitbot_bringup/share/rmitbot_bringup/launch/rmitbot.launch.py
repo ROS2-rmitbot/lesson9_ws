@@ -46,9 +46,33 @@ def generate_launch_description():
         ),
     )
     
+    # Launch the rplidar hardware
+    rplidar = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_mapping"),
+            "launch", "rplidar.launch.py"
+        ),
+        launch_arguments={
+            "use_sim_time": "False"
+        }.items()
+    )
+    
+    # Launch the slamtoolbox 
+    slamtoolbox = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_mapping"),
+            "launch", "slam.launch.py"
+        ),
+        launch_arguments={
+            "use_sim_time": "False"
+        }.items()
+    )
+    
     return LaunchDescription([
         display,
         # controller,
         teleopkeyboard,
         localization,
+        # rplidar, 
+        slamtoolbox, 
     ])

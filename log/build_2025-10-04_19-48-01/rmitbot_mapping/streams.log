@@ -1,0 +1,25 @@
+[0.022s] Invoking command in '/home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping -- -j8 -l8
+[0.068s] Invoked command in '/home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping -- -j8 -l8
+[0.070s] Invoking command in '/home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping
+[0.089s] -- Install configuration: ""
+[0.090s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch
+[0.090s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch/rplidar.launch.py
+[0.090s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch/slam.launch.py
+[0.090s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/config
+[0.091s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/config/slam.yaml
+[0.091s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/ament_index/resource_index/package_run_dependencies/rmitbot_mapping
+[0.091s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/ament_index/resource_index/parent_prefix_path/rmitbot_mapping
+[0.091s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/environment/ament_prefix_path.sh
+[0.091s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/environment/ament_prefix_path.dsv
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/environment/path.sh
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/environment/path.dsv
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/local_setup.bash
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/local_setup.sh
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/local_setup.zsh
+[0.092s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/local_setup.dsv
+[0.092s] -- Installing: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.dsv
+[0.093s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/ament_index/resource_index/packages/rmitbot_mapping
+[0.093s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/cmake/rmitbot_mappingConfig.cmake
+[0.093s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/cmake/rmitbot_mappingConfig-version.cmake
+[0.093s] -- Up-to-date: /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.xml
+[0.133s] Invoked command in '/home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson9_ws/build/rmitbot_mapping
