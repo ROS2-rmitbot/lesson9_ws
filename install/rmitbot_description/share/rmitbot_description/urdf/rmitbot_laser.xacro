@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rmitbot">
+    <link name="laser_link">
+        <inertial>
+            <origin xyz="-0.012 -0.00038 -0.017" rpy="0 0 0" />
+            <mass value="0.073" />
+            <inertia    ixx="1.96E-05" ixy="-3.62E-07" ixz="4.28E-07" 
+                        iyy="2.41E-05" iyz="1.50E-08" izz="4.14E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 3.14" />
+            <geometry>
+                <mesh filename="package://rmitbot_description/meshes/laser_link.STL" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://rmitbot_description/meshes/laser_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="laser_joint" type="fixed">
+        <!-- <origin xyz="0. 0. 0.12" rpy="0 0 3.14" /> -->
+        <origin xyz="0. 0. 0.12" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="laser_link" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <gazebo reference="laser_link">
+        <sensor name="lidar" type="gpu_lidar">
+            <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+                <render_engine>ogre</render_engine>
+            </plugin>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <topic>scan</topic>
+            <update_rate>5</update_rate>
+            <gz_frame_id>laser_link</gz_frame_id>
+            <lidar>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1.00000</resolution>
+                        <min_angle>0.000000</min_angle>
+                        <max_angle>6.280000</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>3</samples>
+                        <min_angle>-0.001</min_angle>
+                        <max_angle>0.001</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.120000</min>
+                    <max>12.0</max>
+                    <resolution>0.02</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </lidar>
+        </sensor>
+    </gazebo>
+</robot>

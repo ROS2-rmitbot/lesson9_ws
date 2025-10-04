@@ -1,5 +1,6 @@
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/base_link.STL
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_front_link.STL
+/home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/laser_link.STL
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_left_link.STL
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_rear_link.STL
@@ -7,6 +8,7 @@
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_imu.xacro
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+/home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_laser.xacro
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_ros2_control.xacro
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py

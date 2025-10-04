@@ -7,5 +7,5 @@
     <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_gazebo.xacro" />
     <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_ros2_control.xacro" /> 
     <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_imu.xacro" /> 
-
+    <xacro:include filename="$(find rmitbot_description)/urdf/rmitbot_laser.xacro" />
 </robot>
