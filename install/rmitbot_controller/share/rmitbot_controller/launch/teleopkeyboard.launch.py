@@ -11,18 +11,19 @@ from launch.substitutions import LaunchConfiguration
 # ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/my_robot_controller/cmd_vel -p stamped:=True
 
 def generate_launch_description():
+    
     teleop_keyboard = Node(
-        package='teleop_twist_keyboard',
-        executable='teleop_twist_keyboard',
-        name='teleop_twist_keyboard',
-        output='screen',
-        prefix='xterm -e',
+        package=    'teleop_twist_keyboard',
+        executable= 'teleop_twist_keyboard',
+        name=       'teleop_twist_keyboard',
+        output=     'screen',
+        prefix=     'xterm -e',
         parameters=[
             {"use_sim_time": False},
             {'stamped': True}], 
-        remappings=[
-            ('cmd_vel', '/rmitbot_controller/cmd_vel')]
-    )         
+        # remappings=[
+        #     ('cmd_vel', '/rmitbot_controller/cmd_vel')]
+    )     
     
     return LaunchDescription(
         [

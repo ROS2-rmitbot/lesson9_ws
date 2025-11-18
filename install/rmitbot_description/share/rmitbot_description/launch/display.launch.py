@@ -10,46 +10,20 @@ from launch.substitutions import Command, LaunchConfiguration
 # ros2 launch rmitbot_description display.launch.py
 
 def generate_launch_description():
-    
-  
     # Path to the package
-    pkg_path = get_package_share_directory("rmitbot_description")
-    
-    # Path to the urdf file
-    urdf_path = os.path.join(pkg_path, 'urdf', 'rmitbot.urdf.xacro')
-    
+    pkg_path_description = get_package_share_directory("rmitbot_description")
     # Path to the rviz config file
-    rviz_path = os.path.join(pkg_path, 'rviz', 'display.rviz')
-    
-    # Compile the xacro file to urdf
-    robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
-    
-    # Publish the robot static TF from the urdf
-    robot_state_publisher = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        parameters=[{"use_sim_time": False, 
-                     "robot_description": robot_description}],
-        )
-    
-    # Publish the joint state TF - Not needed with a controller
-    joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-    )
-    
+    rviz_path = os.path.join(pkg_path_description, 'rviz', 'display.rviz')
     # This node launches RViz2 with the specified configuration file
     rviz = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='screen',
-        arguments=['-d', rviz_path],
+        package=    'rviz2',
+        executable= 'rviz2',
+        name=       'rviz2',
+        output=     'screen',
+        arguments=[ '-d', rviz_path],
         parameters=[{"use_sim_time": False}],
     )
     
     return LaunchDescription([
-        robot_state_publisher, 
-        # joint_state_publisher_gui,
         rviz, 
     ])

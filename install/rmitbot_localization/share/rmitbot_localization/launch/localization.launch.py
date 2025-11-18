@@ -8,13 +8,16 @@ import os
 
 def generate_launch_description():
 
+    pkg_path_localization = get_package_share_directory("rmitbot_localization")
+    config_localization =   os.path.join(pkg_path_localization, 'config', 'ekf.yaml')
 
     robot_localization = Node(
         package="robot_localization",
         executable="ekf_node",
         name="ekf_filter_node",
         output="screen",
-        parameters=[os.path.join(get_package_share_directory("rmitbot_localization"), "config", "ekf.yaml")],
+        parameters=[config_localization],
+        remappings=[('odometry/filtered', 'odom_ekf')]
     )
 
     return LaunchDescription([

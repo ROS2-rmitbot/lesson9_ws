@@ -921,7 +921,7 @@
 				{
 					"backtrace" : 147,
 					"isSystem" : true,
-					"path" : "/opt/ros/jazzy/include"
+					"path" : "/opt/ros/jazzy/include/pal_statistics"
 				},
 				{
 					"backtrace" : 147,

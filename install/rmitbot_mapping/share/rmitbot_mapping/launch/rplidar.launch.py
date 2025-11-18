@@ -11,7 +11,7 @@ def generate_launch_description():
             executable='rplidar_composition',
             output='screen',
             parameters=[{
-                # 'serial_port': '/dev/ttyUSB1',
+                # 'serial_port': '/dev/ttyUSB0',
                 'serial_port': '/dev/rplidar',
                 'frame_id': 'laser_link',
                 'angle_compensate': True,

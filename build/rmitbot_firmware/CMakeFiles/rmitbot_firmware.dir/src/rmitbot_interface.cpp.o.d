@@ -688,6 +688,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp \
+ /opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp \
  /usr/include/fmt/compile.h /usr/include/fmt/format.h \
  /usr/include/fmt/core.h \
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/component_parser.hpp \
@@ -695,9 +696,11 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o: \
  /opt/ros/jazzy/include/joint_limits/joint_limits/joint_limits.hpp \
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp \
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/introspection.hpp \
- /opt/ros/jazzy/include/pal_statistics/pal_statistics_macros.hpp \
- /opt/ros/jazzy/include/pal_statistics/pal_statistics.hpp \
- /opt/ros/jazzy/include/pal_statistics/pal_statistics_utils.hpp \
+ /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/statistics_types.hpp \
+ /opt/ros/jazzy/include/realtime_tools/realtime_tools/mutex.hpp \
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics_macros.hpp \
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics.hpp \
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics_utils.hpp \
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/statistics.hpp \
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistics__struct.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -718,7 +721,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o: \
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistics_values__builder.hpp \
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistics_values__traits.hpp \
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistics_values__type_support.hpp \
- /opt/ros/jazzy/include/pal_statistics/static_circular_buffer.hpp \
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/static_circular_buffer.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp \
  /opt/ros/jazzy/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp \
@@ -744,7 +747,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o: \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp \
- /opt/ros/jazzy/include/pal_statistics/registration_utils.hpp \
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/registration_utils.hpp \
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/lexical_casts.hpp \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
  /usr/include/c++/13/stack /usr/include/c++/13/bits/stl_stack.h \

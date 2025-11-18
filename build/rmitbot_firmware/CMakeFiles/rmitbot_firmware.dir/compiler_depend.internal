@@ -24,6 +24,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o
  /opt/ros/jazzy/include/class_loader/class_loader/visibility_control.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/component_parser.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp
+ /opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_info.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/introspection.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/lexical_casts.hpp
@@ -34,6 +35,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/hardware_interface_return_values.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/hardware_interface_type_values.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/lifecycle_state_names.hpp
+ /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/statistics_types.hpp
  /opt/ros/jazzy/include/hardware_interface/hardware_interface/types/trigger_type.hpp
  /opt/ros/jazzy/include/joint_limits/joint_limits/joint_limits.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
@@ -64,11 +66,11 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o
  /opt/ros/jazzy/include/lifecycle_msgs/lifecycle_msgs/msg/state.hpp
  /opt/ros/jazzy/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp
  /opt/ros/jazzy/include/lifecycle_msgs/lifecycle_msgs/msg/transition_event.h
- /opt/ros/jazzy/include/pal_statistics/pal_statistics.hpp
- /opt/ros/jazzy/include/pal_statistics/pal_statistics_macros.hpp
- /opt/ros/jazzy/include/pal_statistics/pal_statistics_utils.hpp
- /opt/ros/jazzy/include/pal_statistics/registration_utils.hpp
- /opt/ros/jazzy/include/pal_statistics/static_circular_buffer.hpp
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics.hpp
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics_macros.hpp
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/pal_statistics_utils.hpp
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/registration_utils.hpp
+ /opt/ros/jazzy/include/pal_statistics/pal_statistics/static_circular_buffer.hpp
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistic__struct.hpp
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistic__traits.hpp
  /opt/ros/jazzy/include/pal_statistics_msgs/pal_statistics_msgs/msg/detail/statistics__builder.hpp
@@ -380,6 +382,7 @@ CMakeFiles/rmitbot_firmware.dir/src/rmitbot_interface.cpp.o
  /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h
  /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h
  /opt/ros/jazzy/include/realtime_tools/realtime_tools/async_function_handler.hpp
+ /opt/ros/jazzy/include/realtime_tools/realtime_tools/mutex.hpp
  /opt/ros/jazzy/include/realtime_tools/realtime_tools/realtime_helpers.hpp
  /opt/ros/jazzy/include/rmw/rmw/discovery_options.h
  /opt/ros/jazzy/include/rmw/rmw/domain_id.h

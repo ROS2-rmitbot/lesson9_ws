@@ -1,5 +1,5 @@
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch/rplidar.launch.py
-/home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch/slam.launch.py
+/home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/launch/mapping.launch.py
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/rmitbot_mapping/config/slam.yaml
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/ament_index/resource_index/package_run_dependencies/rmitbot_mapping
 /home/v120506/rmitbot_v4/lesson9_ws/install/rmitbot_mapping/share/ament_index/resource_index/parent_prefix_path/rmitbot_mapping
